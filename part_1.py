@@ -1,4 +1,4 @@
-sample_bay=["Basalt","Silica","Iron","Dust"]
+sample_bay = ["Basalt","Silica","Iron","Dust"]
 new_findings = []
 
 
@@ -20,4 +20,12 @@ rock_3  = input("enter rock type 3: ")
 new_findings.append(rock_3)
 
 print(new_findings)
+
+if "dust" in sample_bay:
+    is_dust = sample_bay.index("dust")
+    sample_bay.pop(is_dust)
+    print("Dust is gone")
+else:
+    print("there was no dust")
+
 
