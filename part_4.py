@@ -7,7 +7,7 @@ while True:
         if reading >45 :
             print("CRITICAL TILT! HALTING.")
             break
-
+            
         else:
             travel_log.append(reading)
             print("Path stable. Moving forward.")
@@ -15,3 +15,7 @@ while True:
 
     except ValueError:
         print("Sensor Glitch")
+
+print("Mission Terminated.")
+print(f"Total steps taken: {len(travel_log)}")
+print(travel_log)
