@@ -14,3 +14,10 @@ rover_status["Heater"] ="on"
 rover_status["Speed"] = 5
 
 print(rover_status)
+
+mission_log = [
+    {"Site": "Crater A", "Radiation": "Low", "Water": False},
+    {"Site": "Dune B", "Radiation": "High", "Water": True}
+]
+for i in range(len(mission_log)):
+    print(f"Site {mission_log[i]["Site"]} has {mission_log[i]["Radiation"]} radiation")
